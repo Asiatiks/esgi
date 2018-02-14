@@ -6,8 +6,3 @@ php:
                
 script:
         - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
-
-deploy:
-        provider: heroku
-        api_key:
-                secure: 6af5ac98-1caf-4a69-8b70-b7f3d3c65aa4
