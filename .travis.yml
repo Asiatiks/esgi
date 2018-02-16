@@ -24,4 +24,4 @@ deploy:
   app: open-source-esgi
   on:
     repo: Asiatiks/esgi
-    branch: master
+    branch: deploy
