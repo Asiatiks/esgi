@@ -1,16 +1,16 @@
 language: php
 
 php:
-        - '7.0'
+  - '7.0'
               
 before_script:
-	- composer require phpunit/phpunit --prefer-source
-        - composer install
+  - composer require phpunit/phpunit --prefer-source
+  - composer install
 
 script: 
-        - docker run --rm -v $PWD:/app phpqa/phpcs .
-        - docker run --rm -v $PWD:/app phpqa/security-checker security:check
-        - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
+  - docker run --rm -v $PWD:/app phpqa/phpcs .
+  - docker run --rm -v $PWD:/app phpqa/security-checker security:check
+  - ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 
 notifications:
         email:
@@ -18,9 +18,10 @@ notifications:
                 on_failure: always
 
 deploy:
-	provider: heroku
-	api_key:
-		secure: "6af5ac98-1caf-4a69-8b70-b7f3d3c65aa4"
-		app: michaelesgi
-			on:     repo: Asiatiks/esgi
-			branch: master
+   provider: heroku
+   api_key:
+       secure: "6af5ac98-1caf-4a69-8b70-b7f3d3c65aa4"
+       app: michaelesgi
+              on: 
+	       repo: Asiatiks/esgi
+               branch: master
