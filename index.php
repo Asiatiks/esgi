@@ -1,4 +1,4 @@
 <?php
      $var = "toto";
-     echo $var;
+     echo $var; 
 ?>
