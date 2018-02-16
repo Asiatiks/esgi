@@ -1,7 +1,7 @@
 <?php 
 	declare(strict_types=1);  
 	
-	// class email
+	// class
 	final class Email {     
 		private $email;      
 		

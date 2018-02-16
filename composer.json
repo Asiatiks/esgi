@@ -3,7 +3,10 @@
 		"classmap": [             
 			"src/"         
 		]     
-	},     
+	},
+	"require": {
+		"php": "^7.1"
+	},
 	"require-dev": {         
 		"phpunit/phpunit": "^7"     
 	} 

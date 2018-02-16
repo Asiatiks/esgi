@@ -1,3 +1,4 @@
 <?php
-     echo "tata"; 
+	echo "tata";
+	
 ?>
