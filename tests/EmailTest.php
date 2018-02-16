@@ -4,6 +4,7 @@
 
 	use PHPUnit\Framework\TestCase;  
 	
+	//classe test
 	final class EmailTest extends TestCase {
 		
 		public function testCanBeCreatedFromValidEmailAddress(): void {
